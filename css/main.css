@@ -1,0 +1,81 @@
+ .clearfix:after {
+        visibility: hidden;
+        display: block;
+        content: " ";
+        clear: both;
+        height: 0;
+        font-size: 0;
+      }
+
+
+h1 {
+	text-align: center;
+	color: rgb(2, 132, 130);
+}
+
+nav {
+    background: #808080;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+	padding: 35px;
+    color: #fff;
+    background: #ffbf00;
+	text-decoration: none;
+	display: block;
+	float: left;
+}
+
+
+	nav a:hover {
+		color: #000;
+		background: #ee5f3c;
+	}
+
+.wrapper {
+	margin: 0 auto;
+}
+
+h2 {
+	color: #ffd700;
+}
+
+.instructions {
+	text-align: center;
+	width: 50%;
+}
+
+.board {
+	height: 50%;
+	width: 50%;
+	display: inline-block;
+}
+
+	.card {
+		height: 200px;
+		width: 150px;
+		border: solid 1px #000000;
+		border-radius: 10px;
+		float: left;
+		background: #ffff00;
+		margin: 8%;
+	}
+
+footer {
+	background: #808080;
+	clear: both;
+	padding: 5px;
+	text-align: center;
+	color: #ffffff;
+}
+
+footer span {
+	font-weight: 700;
+	color: #ffff00;
+}
