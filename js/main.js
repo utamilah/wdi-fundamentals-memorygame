@@ -2,6 +2,7 @@
 var cards = ['queen', 'queen', 'king', 'king'];
 //Create empty array that will contain cards in play
 var cardsInPlay = [];
+//I pulled from the assignment, but I will highlight the areas I don't really understand in class. I added comments to the areas I think I understand
 
 //Select game board
 var gameBoard = document.getElementById('game-board');
@@ -14,7 +15,7 @@ function createBoard() {
   	cardElement.className = 'card';
   	//assign the data-card attribute to individual cards
     cardElement.setAttribute('data-card', cards[i]);
-
+    //fire event when two cards are clicked
     cardElement.addEventListener('click', isTwoCards);
 
     //add the cards to the parent board
@@ -25,9 +26,11 @@ function createBoard() {
 
 createBoard();
 
+//what happens when two cards are clicked
 function isTwoCards() {
 	cardsInPlay.push(this.getAttribute('data-card'));
 
+	//prints name of card into the console "queen" or "king"
 	console.log(this.getAttribute('data-card'));
 	if (this.getAttribute('data-card') === 'king') {
 		this.innerHTML = "<img src='king.png'>";
